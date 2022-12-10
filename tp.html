@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- CSS File -->
     <link rel="stylesheet" href="./tp.css" />
-    <title>Youtube Clone with HTML & CSS</title>
+    <title>Clone de Youtube avec HTML et CSS</title>
   </head>
   <body>
     <header>
         <nav class="col-12" style="position: sticky;">
             <div>
-                <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png" id="logo_YT">
+                <img src="./image/yt-logo.png" class="image">
                 <div style="position: relative; float: right;">
-                    <input id="search-input" type="search" id="form1" placeholder="Search" style="width: 500px; border-width: 2px; height: 35px; border-radius: 10px;"/>
+                    <input id="search-input" type="search" id="form1" placeholder="Search" style="width: 500px; border-width: 2px; height: 35px; border-radius: 3h3px;"/>
                     <button type="button" class="btn btn-outline-dark" style="width: 70px; height: 35px; margin-right: 200px;">Search</button>
                     <!-- Avatar -->
                     <img src="https://static.vecteezy.com/system/resources/previews/007/319/933/non_2x/black-avatar-person-icons-user-profile-icon-vector.jpg" 
@@ -27,67 +27,75 @@
         <br>
         <br>
     </header>
-    <h10 class="centre1">Vidéos TROP REALISTE:</h10>
+    <div class="change_color">
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+            <label class="color" for="flexSwitchCheckChecked">Mettre en noir et blanc</label>
+        </div>
+    </div>
+
+    <h3>Ma blibliothèque YouTube:</h3>
+    <hr>
+    <div class="video-play">
+
+    </div>
+    <br>
+    <hr>
+
+    <div class="input">
+        <textarea name="Enter url" id="iframeCode"></textarea>
+        <div>
+            <button id="b1" type="button" onclick="save()">Enregister</button>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <h3 class="color">Vidéos TROP REALISTE:</h3>
     <br>
     <br>
     <div style="width: 1300px; height: 140px; margin: 0 auto;">
         <iframe class="col-2" src="https://www.youtube.com/embed/6qkSKvfSJcE" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/0lO4CIUR7c8" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/5CKZipzSlns" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/UWiJ4VmxKeg" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
     <hr noshade class="centre_hr">
-    <h10 class="centre1">Vidéos des histoires d'horreur:</h10>
+    <h3 class="color">Vidéos des histoires d'horreur:</h3>
     <br>
     <br>
     <div style="width: 1300px; height: 140px; margin: 0 auto;">
         <iframe class="col-2" src="https://www.youtube.com/embed/ml3Un_T7Rws" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/8S_fh1bzQe0" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/7_NumKdnr30" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/ZalQBotnJSM" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
     <hr noshade class="centre_hr">
-    <h10 class="centre1">Vidéos de démontage d'un ordinateur:</h10>
+    <h3 class="color">Vidéos de démontage d'un ordinateur:</h3>
     <br>
     <br>
     <div style="width: 1300px; height: 140px; margin: 0 auto;">
         <iframe class="col-2" src="https://www.youtube.com/embed/cAiHMe4KpIw" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/w6JOu15PHKA" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/87EYyxkCo1M" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe class="col-2" src="https://www.youtube.com/embed/LEZwGOSY7Tw" title="YouTube video player" frameborder="0"
-         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <br>
     <hr noshade class="centre_hr">
-    <form>
-        <legend>Choisi une couleur d'écran:</legend>
-    
-        <div>
-          <input type="radio" id="choix_A" name="couleur" value="Noir">
-          <label for="choix_A">Noir</label>
-        </div>
-        <div>
-          <input type="radio" id="choix_B" name="couleur" value="Blanc">
-          <label for="choix_B">Blanc</label>
-        </div>
-        <div>
-            <button type="submit">C'est parti</button>
-        </div>
-        <pre id="log">
-    </form>
 </body>
 <script src="./tp.js"></script>
 </html>

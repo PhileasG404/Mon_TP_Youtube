@@ -12,9 +12,6 @@ legend {
     display: flex;
     justify-content: center;
 }
-.centre1 {
-    float: left;
-}
 hr {
     display: flex;
     justify-content: center;
@@ -33,4 +30,13 @@ body {
     width: 1100px;
     height: 1400px;
     margin: 0 auto;
+}
+.border_white {
+    border: white;
+}
+.darkmode {
+    color: white;
+}
+.darkmode2 {
+    background-color: black;
 }
